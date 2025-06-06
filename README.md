@@ -2,6 +2,10 @@
 
 I wanted something similar to this scene from [The Batman](https://www.youtube.com/watch?v=dbBGf2-WWGw)
 
+## Show Case
+
+
+
 ## Backend
 
 I realized that this was super simple with Pocketbase SSE.
