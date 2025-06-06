@@ -4,10 +4,11 @@ I wanted something similar to this scene from [The Batman](https://www.youtube.c
 
 ## Show Case
 
-[video](https://github.com/user-attachments/assets/e4a295a8-5282-462c-9c27-bac238a5df15)
+[video](https://github.com/user-attachments/assets/6fa2c8dd-268f-46bf-867e-e6b90cf88b89)
 
-## Backend
+## Stack
 
-I realized that this was super simple with Pocketbase SSE.
-I'll use railway, until my free trial ends, then I'll try
+Elm + Pocketbase
+
+Using railway until my free trial ends, then I'll try
 renting a VPS.
