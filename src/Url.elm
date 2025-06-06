@@ -1,3 +1,3 @@
 module Url exposing (baseUrl)
 
-baseUrl = "http://localhost:8090/"
+baseUrl = "https://pocketbase-production-98a3.up.railway.app/"
