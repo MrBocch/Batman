@@ -1,4 +1,4 @@
-module Main exposing (main, baseUrl)
+module Main exposing (main)
 
 import Browser
 
@@ -6,8 +6,6 @@ import Model exposing (init)
 import View exposing (view)
 import Update exposing (update)
 import Subscriptions exposing (subscriptions)
-
-baseUrl = "http://localhost:8090/"
 
 
 main = Browser.element
