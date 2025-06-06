@@ -29,7 +29,7 @@ update msg model =
                         "Meta" -> model
                         "Tab" -> { model | inputText = (model.inputText ++ "  ") }
                         "Enter" -> { model | inputText = "", sentMessages = List.append model.sentMessages [model.inputText] } -- also sends the command
-                        _ -> { model | inputText = ( model.inputText ++ char ) }
+                        _ -> { model | inputText = ( String.toUpper (model.inputText ++ char) ) }
 
                 newCmd = if char == "Enter" then
                             createPost model.inputText
