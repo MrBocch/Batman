@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="static/stlye.css">
+  <script src="static/main.js"></script>
+  <script src="static/pocketbase.js"></script>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
+  body {
+    font-family: 'Noto Serif JP', mono;
+  }
+
+  </style>
+</head>
+
+<body>
+
+<div id="main"></div>
+
+
+<script>
+  (function () {
+    const baseUrl = "http://127.0.0.1:8090"
+    const pb = new PocketBase(baseUrl);
+    var app = Elm.Main.init({
+      node: document.getElementById("main")
+    });
+
+    pb.collection('posts').subscribe('*', function (e) {
+        // console.log(e.action);
+        // console.log(e.record['Text']);
+        app.ports.realtimeEvent.send(e.record['Text']);
+    }, { /* other options like: filter, expand, custom headers, etc. */ });
+  })();
+  </script>
+</body>
+</html>
