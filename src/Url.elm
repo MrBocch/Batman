@@ -1,3 +1,7 @@
 module Url exposing (baseUrl)
 
-baseUrl = "https://pocketbase-production-98a3.up.railway.app/"
+-- using a vps, did not bother with https for now
+
+
+baseUrl =
+    "http://209.38.139.233:8090/"
