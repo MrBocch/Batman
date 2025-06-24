@@ -10,5 +10,16 @@ I wanted something similar to this scene from [The Batman](https://www.youtube.c
 
 Elm + Pocketbase
 
-Using railway until my free trial ends, then I'll try
-renting a VPS.
+## Hosting
+
+My free trial of railway ran out and if I wanted to continue
+hosting this pocketbase back end I had two choices
+
+- Pay for the railway thing
+- Rent a VPS
+
+I decided that renting a VPS would be more fun because I would learn things
+and I could use a VPS for other things.
+
+I did not expect that setting up the reverse proxy for https would be so easy with
+caddy.
