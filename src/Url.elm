@@ -4,4 +4,4 @@ module Url exposing (baseUrl)
 
 
 baseUrl =
-    "http://209.38.139.233:8090/"
+    "https://vps.jorge.sh/"
